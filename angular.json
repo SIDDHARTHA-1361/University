@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shy": {
+    "skatedoon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,14 +23,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/shy",
+            "outputPath": "dist/skatedoon",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
+            "assets": 
+            [
               {
                 "glob": "**/*",
                 "input": "public"
@@ -44,6 +45,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }
+              ],
               "budgets": [
                 {
                   "type": "initial",
@@ -70,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shy:build:production"
+              "buildTarget": "skatedoon:build:production"
             },
             "development": {
-              "buildTarget": "shy:build:development"
+              "buildTarget": "skatedoon:build:development"
             }
           },
           "defaultConfiguration": "development"

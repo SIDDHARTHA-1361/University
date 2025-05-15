@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   featuredProducts = [
     {
-      title: 'Classic Cruiser Skateboard',
+      title: 'assets',
       price: 3499,
-      image: 'https://images.unsplash.com/photo-1600185365443-cf63a788ea9f'
+      image: '../../assets/hoodie.jpg'
     },
     {
       title: 'Street Performance Deck',

@@ -12,6 +12,9 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderConfirmationComponent } from './pages/order-confirmation/order-confirmation.component';
 import { YourOrdersComponent } from './pages/your-orders/your-orders.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -24,11 +27,11 @@ import { FooterComponent } from './shared/footer/footer.component';
     CheckoutComponent,
     OrderConfirmationComponent,
     YourOrdersComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
